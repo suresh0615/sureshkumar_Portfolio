@@ -1,1004 +1,649 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>SURESHKUMAR</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sureshkumar - AI/ML Engineer specializing in Retrieval-Augmented Generation (RAG), Generative AI, and Machine Learning. Portfolio showcasing expertise in LLM applications, applied AI research, and vector search." />
+    <meta name="author" content="Sureshkumar" />
+    <meta name="keywords" content="AI, ML, RAG, Generative AI, LLM, Python, Applied AI Research, Vector Search, Portfolio, Sureshkumar" />
+    <title>SK</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" />
 
-    <!-- EmailJS Script -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
 </head>
-
-<body class="d-flex flex-column h-100">
-    <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">SURESHKUMAR</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+<body>
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">S<span class="text-gradient">K</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="py-5">
-            <div class="container px-5 pb-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-xxl-5">
-                        <!-- Header text content-->
-                        <div class="text-center text-xxl-start">
-                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                                <div class="text-uppercase"> AI/ML Engineer &middot; Data Science enthusiast &middot;</div>
-<!-- 								<div class="text-uppercase">Data Engineering</div> -->
-                            </div>
-                            <div class="fs-3 fw-light text-muted">I can transform your business with innovative data science and AI-driven solutions.</div>
-                            <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline"></span></h1>
-                            <div
-                                class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
-                                    href="https://drive.google.com/file/d/1uG9wDlWcsxu1dCydVN_F7-KFTh_N0SZL/view" target="_blank">Resume</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-7">
-                        <!-- Header profile picture-->
-                        <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                            <div class="profile bg-gradient-primary-to-secondary">
-                                <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
-                                <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                                <img class="profile-img img-fluid" src="assets/profile2.png" alt="profile image" style="max-width: 830px; max-height: 790px;" />
-                                <div class="dots-1">
-                                    <!-- SVG Dots-->
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
-                                        xml:space="preserve">
-                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                            <path
-                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!-- END of SVG dots-->
-                                </div>
-                                <div class="dots-2">
-                                    <!-- SVG Dots-->
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
-                                        xml:space="preserve">
-                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                            <path
-                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!-- END of SVG dots-->
-                                </div>
-                                <div class="dots-3">
-                                    <!-- SVG Dots-->
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
-                                        xml:space="preserve">
-                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                            <path
-                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!-- END of SVG dots-->
-                                </div>
-                                <div class="dots-4">
-                                    <!-- SVG Dots-->
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
-                                        xml:space="preserve">
-                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                            <path
-                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!-- END of SVG dots-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- About Section-->
-        <section class="bg-light py-5" id="about">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xxl-8">
-                        <div class="text-center my-5">
-                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                            <p class="lead fw-light mb-4"></p>
-                            <p class="text-muted" style="text-align: justify;">
-    Hi! I'm a Data Science enthusiast with hands-on experience in Python, OCR, 
-    Deep Learning text classification, and LLM-based model building. I also have strong knowledge in 
-    Data Engineering and Full Stack Development using the MERN (MongoDB, Express.js, React, Node.js) stack. 
-    I’m passionate about working with data, building intelligent solutions, 
-    and exploring new technologies to solve real-world problems.
-</p>                            <div class="d-flex justify-content-center fs-2 gap-4">
-                                <a class="text-gradient" href="#contact"><i class="bi bi-envelope"></i></a>
-                                <a class="text-gradient" href="https://www.linkedin.com/in/sureshkumar1512?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin"></i></a>
-                                <a class="text-gradient" href="https://github.com/suresh0615" target="_blank"><i class="bi bi-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-<!-- Experience Section -->
-<div class="container px-5 my-5">
-  <div class="row gx-5 justify-content-center">
-    <div class="col-lg-11 col-xl-9 col-xxl-8">
-
-      <section id="resume">
-        <div class="d-flex align-items-center justify-content-between mb-4">
-          <h2 class="text-primary fw-bolder mb-0">Experience</h2>
         </div>
+    </nav>
 
-        <div class="timeline">
-
-          <!-- Timeline Item 1 -->
-			<div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Oct 2025 – Present</div>
-            <div class="timeline-content">
-              <h3 class="fw-bolder mb-1">AI/ML Engineer</h3>
-              <div class="small text-muted mb-2">AdamsBridge</div>
-              <p>
-                • Worked with Python, OCR, and RAG. <br>
-                • Gained experience with LLM-based model. <br>
-              </p>
+    <section id="hero">
+        <div class="hero-bg-mesh"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Available for opportunities</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Working on</span><br />
+                        <span class="typing-wrapper">
+                            <span class="typing-text" id="typingText">AI/ML </span><span class="cursor"></span>
+                        </span>
+                    </h1>
+                    <p class="hero-subtitle">I build intelligent AI solutions with a focus on RAG, LLM applications, and machine learning. I research, develop, and optimize AI systems to solve real-world problems and explore emerging technologies in Generative AI.</p>
+                    <div class="hero-buttons">
+                        <a class="btn-primary-custom" href="https://drive.google.com/file/d/1uG9wDlWcsxu1dCydVN_F7-KFTh_N0SZL/view" target="_blank">
+                            <i class="bi bi-file-earmark-text me-2"></i>Resume
+                        </a>
+                        <a class="btn-outline-custom" href="#contact">
+                            <i class="bi bi-send me-2"></i>Get in Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="hero-profile-wrapper">
+                        <div class="hero-profile-frame">
+                            <img src="assets/portfolio.png" alt="Sureshkumar - AI/ML Engineer" />
+                            <div class="profile-glow"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Jun 2025 – Oct 2025</div>
-            <div class="timeline-content">
-              <h3 class="fw-bolder mb-1">Intern Associate</h3>
-              <div class="small text-muted mb-2">AdamsBridge</div>
-              <p>
-                • Worked with Python, OCR, and Deep Learning text classification models. <br>
-                • Gained experience with LLM-based model building and data pipelines. <br>
-                • Applied data engineering concepts for efficient processing and storage.
-              </p>
-            </div>
-          </div>
-
         </div>
-      </section>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll down</span>
+        </div>
+    </section>
 
-    </div>
-  </div>
-</div>
-
-<!-- Timeline CSS -->
-<style>
-.timeline {
-  position: relative;
-  margin: 20px 0;
-  padding-left: 30px;
-  border-left: 3px solid #0d6efd; /* primary blue line */
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 40px;
-  padding-left: 20px;
-}
-
-.timeline-dot {
-  position: absolute;
-  left: -12px;
-  top: 5px;
-  width: 20px;
-  height: 20px;
-  background-color: #0d6efd;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 0 0 2px #0d6efd;
-}
-
-.timeline-date {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #6c757d;
-  margin-bottom: 8px;
-}
-
-.timeline-content {
-  background: #f8f9fa;
-  padding: 15px 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-</style>
-
-        <div class="container px-5 my-5">
-            <div class="text-center mb-5">
-                <!-- <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1> -->
+    <section id="about">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-subtitle">Get to know me</p>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
             </div>
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-11 col-xl-9 col-xxl-8">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-8 reveal">
+                    <p class="about-text">I build intelligent AI solutions with a focus on <strong>Retrieval-Augmented Generation (RAG), Generative AI, and Machine Learning</strong>. My work involves researching and developing RAG pipelines, experimenting with retrieval and model strategies, and building practical AI systems that solve real-world problems.</p>
+                    <p class="about-text">I’m particularly interested in <strong>LLMs, RAG architecture, information retrieval, embedding models, vector search, and applied AI research</strong>, while continuously exploring new techniques to improve the performance, accuracy, and reliability of AI applications.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">7</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#contact" class="social-link" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/sureshkumar1512" class="social-link" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/suresh0615" class="social-link" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <!-- certification Section-->
-                    <section id="resume">
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <h2 class="text-primary fw-bolder mb-0">Certifications</h2>
-                            <!-- Download resume button-->
-                            <!-- Note: Set the link href target to a PDF file within your project-->
-                            <a class="btn btn-primary px-4 py-3" href="https://drive.google.com/file/d/1uG9wDlWcsxu1dCydVN_F7-KFTh_N0SZL/view" target="_blank">
-                                <div class="d-inline-block bi bi-download me-2"></div>
-                                Download Resume
+    <section id="experience">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-subtitle">My Journey</p>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">Oct 2025 – Present</span>
+                                <h3 class="timeline-role">Trainee - Software Engineer</h3>
+                                <p class="timeline-company">AdamsBridge</p>
+                                <ul class="timeline-desc">
+                                    <li>Worked with Python, OCR, and RAG (Retrieval-Augmented Generation) technologies</li>
+                                    <li>Gained experience with LLM-based model development, software engineering practices, and deployment</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">Jun 2025 – Oct 2025</span>
+                                <h3 class="timeline-role">Intern Associate</h3>
+                                <p class="timeline-company">AdamsBridge</p>
+                                <ul class="timeline-desc">
+                                    <li>Worked with Python, OCR, and Deep Learning text classification models</li>
+                                    <li>Gained experience with LLM-based model building and data pipelines</li>
+                                    <li>Applied data engineering concepts for efficient processing and storage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="bg-secondary">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-subtitle">Academic Background</p>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2023 – 2025</span>
+                                <h3 class="timeline-role">M.Sc Computer Science</h3>
+                                <p class="timeline-company">RVS College of Arts and Science, Coimbatore</p>
+                                <ul class="timeline-desc">
+                                    <li>Dual specialization in Full Stack Development (MERN, JS, HTML, CSS) and Data Science (Python, Excel, Tableau, Pentaho, SQL).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2020 – 2023</span>
+                                <h3 class="timeline-role">B.Sc Information Technology</h3>
+                                <p class="timeline-company">Dr.NGP Arts and Science College, Coimbatore</p>
+                                <ul class="timeline-desc">
+                                    <li>Foundational programming languages like Java, Python, C, and C++.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-subtitle">What I do</p>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row g-4">
+                        <div class="col-6 col-md-4 col-lg-3 reveal">
+                            <div class="skill-card">
+                                <i class="bi bi-filetype-py"></i>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 reveal">
+                            <div class="skill-card">
+                                <i class="bi bi-robot"></i>
+                                <span>Artificial Intelligence</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 reveal">
+                            <div class="skill-card">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>Machine Learning</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 reveal">
+                            <div class="skill-card">
+                                <i class="bi bi-sparkles"></i>
+                                <span>Generative AI</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 reveal">
+                            <div class="skill-card">
+                                <i class="bi bi-chat-square-text"></i>
+                                <span>Large Language Models (LLMs)</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 reveal">
+                            <div class="skill-card">
+                                <i class="bi bi-database-gear"></i>
+                                <span>RAG Systems Development</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 reveal">
+                            <div class="skill-card">
+                                <i class="bi bi-braces"></i>
+                                <span>AI Model Development</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 reveal">
+                            <div class="skill-card">
+                                <i class="bi bi-mortarboard"></i>
+                                <span>Applied AI Research</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 reveal text-center">
+                        <div class="project-tags justify-content-center">
+                            <span class="project-tag">Artificial Intelligence</span>
+                            <span class="project-tag">Generative AI</span>
+                            <span class="project-tag">RAG Architecture</span>
+                            <span class="project-tag">LLMs</span>
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Applied AI Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-subtitle">Continuous Learning</p>
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-xl-4 reveal">
+                    <div class="cert-card d-flex align-items-start p-4 h-100 border rounded" style="background-color: var(--card-bg); border-color: var(--border-color) !important;">
+                        <i class="bi bi-diagram-3 fs-2 text-primary me-3"></i>
+                        <div>
+                            <h4 class="h5 mb-1">Learning Apache Airflow</h4>
+                            <p class="text-muted small mb-2">LinkedIn Learning (2025)</p>
+                            <p class="mb-0 small text-secondary">Learned to design, schedule, and manage automated data workflows using Apache Airflow with Python.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 reveal">
+                    <div class="cert-card d-flex align-items-start p-4 h-100 border rounded" style="background-color: var(--card-bg); border-color: var(--border-color) !important;">
+                        <i class="bi bi-lightning-charge fs-2 text-primary me-3"></i>
+                        <div>
+                            <h4 class="h5 mb-1">Apache PySpark by Example</h4>
+                            <p class="text-muted small mb-2">LinkedIn Learning (2025)</p>
+                            <p class="mb-0 small text-secondary">Hands-on guide to Apache PySpark, demonstrating data processing and analytics through practical examples.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 reveal">
+                    <div class="cert-card d-flex align-items-start p-4 h-100 border rounded" style="background-color: var(--card-bg); border-color: var(--border-color) !important;">
+                        <i class="bi bi-gear-wide-connected fs-2 text-primary me-3"></i>
+                        <div>
+                            <h4 class="h5 mb-1">Data Engineering Foundation</h4>
+                            <p class="text-muted small mb-2">LinkedIn Learning (2025)</p>
+                            <p class="mb-0 small text-secondary">Core data engineering topics like data wrangling, schema design, and ETL pipelines using Hive, Hadoop, Spark, and Airflow.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 reveal">
+                    <div class="cert-card d-flex align-items-start p-4 h-100 border rounded" style="background-color: var(--card-bg); border-color: var(--border-color) !important;">
+                        <i class="bi bi-database fs-2 text-primary me-3"></i>
+                        <div>
+                            <h4 class="h5 mb-1">Data Engineering</h4>
+                            <p class="text-muted small mb-2">RVS CAS (2024 – 2025)</p>
+                            <p class="mb-0 small text-secondary">Mastered data engineering with Python, leveraging pandas, numpy, scrapy, Let's Plot, and matplotlib for web scraping, data visualization, and data cleaning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 reveal">
+                    <div class="cert-card d-flex align-items-start p-4 h-100 border rounded" style="background-color: var(--card-bg); border-color: var(--border-color) !important;">
+                        <i class="bi bi-braces fs-2 text-primary me-3"></i>
+                        <div>
+                            <h4 class="h5 mb-1">Python for Data Structures</h4>
+                            <p class="text-muted small mb-2">Great Learning (2024)</p>
+                            <p class="mb-0 small text-secondary">Python data structures including lists, dictionaries, tuples, and sets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 reveal">
+                    <div class="cert-card d-flex align-items-start p-4 h-100 border rounded" style="background-color: var(--card-bg); border-color: var(--border-color) !important;">
+                        <i class="bi bi-filetype-sql fs-2 text-primary me-3"></i>
+                        <div>
+                            <h4 class="h5 mb-1">Python with MySQL</h4>
+                            <p class="text-muted small mb-2">Live Stream Technologies (2022)</p>
+                            <p class="mb-0 small text-secondary">Internship in Python with MySQL.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 reveal">
+                    <div class="cert-card d-flex align-items-start p-4 h-100 border rounded" style="background-color: var(--card-bg); border-color: var(--border-color) !important;">
+                        <i class="bi bi-people fs-2 text-primary me-3"></i>
+                        <div>
+                            <h4 class="h5 mb-1">Soft Skills Training</h4>
+                            <p class="text-muted small mb-2">Infosys BPM LTD (2024)</p>
+                            <p class="mb-0 small text-secondary">Focused on communication, teamwork, problem-solving, and leadership.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-subtitle">My Work</p>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 reveal">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/Data-engineering.webp" alt="IMDB Top Production Company Analysis" />
+                            <div class="project-overlay">
+                                <a href="https://github.com/suresh0615/Data-Engineering" target="_blank" class="btn-primary-custom"><i class="bi bi-box-arrow-up-right me-1"></i>View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">IMDB Top Production Company Analysis</h3>
+                            <p class="project-desc">Data Cleaning & Preprocessing using Scrapy, BeautifulSoup, and Requests. Built comprehensive dataset with Pandas/NumPy, performed EDA with lets-plot, Plotly, Matplotlib, and Seaborn.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Scrapy</span>
+                                <span class="project-tag">Pandas</span>
+                                <span class="project-tag">Plotly</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/suresh0615/Data-Engineering" target="_blank" class="project-link project-link-outline"><i class="bi bi-github"></i>Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 reveal">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/a person working with data for data engineering.png" alt="Data Engineering for Social World" />
+                            <div class="project-overlay">
+                                <a href="https://github.com/suresh0615/Data-Engineering" target="_blank" class="btn-primary-custom"><i class="bi bi-box-arrow-up-right me-1"></i>View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Data Engineering for Social World</h3>
+                            <p class="project-desc">Data Cleaning & Preprocessing using Scrapy/Requests, Pandas, NumPy, SciPy. Exploratory Data Analysis with lets-plot for comprehensive social data insights.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Scrapy</span>
+                                <span class="project-tag">NumPy</span>
+                                <span class="project-tag">SciPy</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/suresh0615/Data-Engineering" target="_blank" class="project-link project-link-outline"><i class="bi bi-github"></i>Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 reveal">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/college department management system.png" alt="College Department Management System" />
+                            <div class="project-overlay">
+                                <a href="https://college-department-frontend.onrender.com" target="_blank" class="btn-primary-custom"><i class="bi bi-box-arrow-up-right me-1"></i>View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">College Department Management System</h3>
+                            <p class="project-desc">Full-stack MERN application enabling student registration, class management, and administrative control with secure authentication.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">MongoDB</span>
+                                <span class="project-tag">Express.js</span>
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://college-department-frontend.onrender.com" target="_blank" class="project-link project-link-primary"><i class="bi bi-box-arrow-up-right"></i>Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 reveal">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/realistic image of a person using a banking application.png" alt="Banking Application" />
+                            <div class="project-overlay">
+                                <a href="https://banking-frontend-sip3.onrender.com" target="_blank" class="btn-primary-custom"><i class="bi bi-box-arrow-up-right me-1"></i>View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Banking Application</h3>
+                            <p class="project-desc">Comprehensive MERN stack banking app with secure login, deposit, withdrawal, and admin user account management.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">MongoDB</span>
+                                <span class="project-tag">Express.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://banking-frontend-sip3.onrender.com" target="_blank" class="project-link project-link-primary"><i class="bi bi-box-arrow-up-right"></i>Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-subtitle">Let's Connect</p>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <h3 class="contact-card-title">Email</h3>
+                        <p class="contact-card-text">Drop me a line anytime</p>
+                        <a href="mailto:suresh2002tirupur@gmail.com" class="contact-card-link">
+                            suresh2002tirupur@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <h3 class="contact-card-title">Location</h3>
+                        <p class="contact-card-text">Based in</p>
+                        <span class="contact-card-link">Coimbatore, India</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="bi bi-globe2"></i>
+                        </div>
+                        <h3 class="contact-card-title">Social</h3>
+                        <p class="contact-card-text">Let's connect online</p>
+                        <div class="contact-social-links">
+                            <a href="https://www.linkedin.com/in/sureshkumar1512" target="_blank" class="contact-social-btn" title="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/suresh0615" target="_blank" class="contact-social-btn" title="GitHub">
+                                <i class="bi bi-github"></i>
                             </a>
                         </div>
-			 <!-- Experience Card 1-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-primary fw-bolder mb-2">2025</div>
-                                            <div class="small fw-bolder">Learning Apache Airflow</div>
-                                            <div class="small text-muted">LinkedIn Learning</div>
-                                            <!-- <div class="small text-muted">Los Angeles, CA</div> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8"><div>
-					    Learned to design, schedule, and manage automated data workflows using Apache Airflow with Python.
-				    </div></div>
-                                </div>
-                            </div>
-                        </div>
-			 <!-- Experience Card 1-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-primary fw-bolder mb-2">2025</div>
-                                            <div class="small fw-bolder">Apache PySpark by example</div>
-                                            <div class="small text-muted">LinkedIn Learning</div>
-                                            <!-- <div class="small text-muted">Los Angeles, CA</div> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8"><div>
-					    gained a hands-on guide to Apache PySpark, demonstrating data processing and analytics through practical examples.
-				    </div></div>
-                                </div>
-                            </div>
-                        </div>
-			    <!-- Experience Card 1-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-primary fw-bolder mb-2">2025</div>
-                                            <div class="small fw-bolder">Data Engineering Foundation</div>
-                                            <div class="small text-muted">LinkedIn Learning</div>
-                                            <!-- <div class="small text-muted">Los Angeles, CA</div> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8"><div>This course covers core data engineering topics like data wrangling, schema design, and ETL pipelines using tools like Hive, Hadoop, Spark, and Airflow. It highlights the crucial role of data engineers in data-driven organizations.</div></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Experience Card 1-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-primary fw-bolder mb-2">2024 - 2025</div>
-                                            <div class="small fw-bolder">Data Engineering</div>
-                                            <div class="small text-muted">RVS CAS</div>
-                                            <!-- <div class="small text-muted">Los Angeles, CA</div> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8"><div>Mastered data engineering with Python, leveraging pandas, numpy, scrapy, Let's Plot, and matplotlib for web scraping, data visualization, and data cleaning. Skills honed for impactful data solutions.</div></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Experience Card 2-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-primary fw-bolder mb-2">2024</div>
-                                            <div class="small fw-bolder">Python for Data Structures</div>
-                                            <div class="small text-muted">Great Learning</div>
-                                            <!-- <div class="small text-muted">Gotham City, NY</div> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>Learned Python data structures including lists, dictionaries, tuples, and sets. Gained proficiency in
-                                            managing and manipulating data efficiently using built-in functions and methods for various applications.
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                </div>
-                                <!-- Experience Card 3-->
-                                <div class="card shadow border-0 rounded-4 mb-5">
-                                    <div class="card-body p-5">
-                                        <div class="row align-items-center gx-5">
-                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                                <div class="bg-light p-4 rounded-4">
-                                                    <div class="text-primary fw-bolder mb-2">Internship(2022)</div>
-                                                    <div class="small fw-bolder">Python with MySQL</div>
-                                                    <div class="small text-muted">Live Stream Technologies</div>
-                                                    <!-- <div class="small text-muted">Los Angeles, CA</div> -->
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <div>Undergone internship (python with MySQL) at Live Stream
-                                                    Technologies in Python.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Experience Card 4-->
-                                <div class="card shadow border-0 rounded-4 mb-5">
-                                    <div class="card-body p-5">
-                                        <div class="row align-items-center gx-5">
-                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                                <div class="bg-light p-4 rounded-4">
-                                                    <div class="text-primary fw-bolder mb-2">2024</div>
-                                                    <div class="small fw-bolder">Soft Skills Training</div>
-                                                    <div class="small text-muted">Infosys BPM LTD (2024)</div>
-                                                    <!-- <div class="small text-muted">Los Angeles, CA</div> -->
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <div>"Enhanced soft skills through Infosys BPM's training, focusing on communication, teamwork, problem-solving, and leadership to drive professional growth and organizational success.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </section>
-
-                    <!-- Education Section-->
-                    <section id="education">
-                        <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-                        <!-- Education Card 1-->
-                         
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-secondary fw-bolder mb-2">2023 - 2025</div>
-                                            <div class="mb-2">
-                                                <div class="small fw-bolder">RVS College of Arts and Science</div>
-                                                <div class="small text-muted">Coimbatore</div>
-                                            </div>
-                                            <div class="fst-italic">
-                                                <div class="small text-muted">M Sc</div>
-                                                <div class="small text-muted">Computer Science</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>I've studied master's degree with dual specialization in Full Stack
-                                            Development (MERN, JavaScript, HTML, CSS) and Data Science (Python, Excel,
-                                            Tableau, Pentaho, SQL). I'm also gaining Knowledge in Data Engineering.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Education Card 2-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-secondary fw-bolder mb-2">2020 - 2023</div>
-                                            <div class="mb-2">
-                                                <div class="small fw-bolder">Dr.NGP arts and Science college</div>
-                                                <div class="small text-muted">Coimbatore</div>
-                                            </div>
-                                            <div class="fst-italic">
-                                                <div class="small text-muted">B Sc</div>
-                                                <div class="small text-muted">Information Technology</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>I've studied foundational programming languages like Java, Python, C, and
-                                            C++ during my bachelor's degree, enhancing my coding skills.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Divider-->
-                    <div class="pb-5"></div>
-                    <!-- Skills Section-->
-                    <section id="skills">
-                        <!-- Skillset Card-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <!-- Professional skills list-->
-                                <div class="mb-5">
-                                    <div class="d-flex align-items-center mb-4">
-                                        <div
-                                            class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                                            <i class="bi bi-tools"></i></div>
-                                        <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional
-                                                Skills</span></h3>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                                                                <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Data
-                                                Science</div>
-                                        </div>
-                                        
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Data
-                                                Engineering</div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Data Analysis</div>
-                                        </div>
-
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Full
-                                                Stack Development</div>
-                                        </div>
-                                                                                <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web
-                                                Development</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Languages list-->
-                                <div class="mb-0">
-                                    <div class="d-flex align-items-center mb-4">
-                                        <div
-                                            class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                                            <i class="bi bi-code-slash"></i></div>
-                                        <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span>
-                                        </h3>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python
-                                                (Pandas,Numpy,Scrapy)</div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SQL
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                Tableau</div>
-                                        </div>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MERN
-                                            </div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML &
-                                                CSS</div>
-                                        </div>
-                                        <div class="col">
-                                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Bootstrap(Beginer)
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8 reveal">
+                    <div class="contact-cta">
+                        <div class="contact-cta-glow"></div>
+                        <h3 class="contact-cta-title">Interested in working together?</h3>
+                        <p class="contact-cta-text">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                        <a href="mailto:suresh2002tirupur@gmail.com" class="btn-contact-cta">
+                            <i class="bi bi-envelope-open me-2"></i>Say Hello
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <section class="py-5" id="project">
-            <div class="container px-5 mb-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                    <!-- Project Card 1-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder">IMDB Top production company Analysis </h2>
-                                        <p>Focused on Data Cleaning & Preprocessing using Scrapy,Beautiful soup and 
-                                            Requests for data extraction. Built a structured Dataset with 
-                                            Pandas, NumPy. Performed 
-                                            Exploratory Data Analysis (EDA) with statistical methods and 
-                                            visualizations using lets-plot,plotly, Matplotlib,Seaborn to uncover patterns and insights.<br> You can see my project in Github </p>
-                                        <a href="https://github.com/suresh0615/Data-Engineering" target="_blank" class="btn btn-primary mt-3">
-				                            View Project
-					                    </a>
-                                    </div>
-                                    <img class="img-fluid" src="./assets/Data-engineering.webp"
-                                        alt="data engineering" <img class="img-fluid"
-                                        src="./assets/realistic image of a person using a banking application.png"
-                                        alt="..." style="max-width: 300px; max-height: 350px;" />
-                                </div>
-                            </div>
-                        </div>
-
-                         <!-- Project Card 1-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder">Data Engineering for social world </h2>
-                                        <p>Focused on Data Cleaning & Preprocessing using Scrapy and 
-                                            Requests for data extraction. Built a structured Dataset with 
-                                            Pandas, NumPy, and SciPy for reshaping data. Performed 
-                                            Exploratory Data Analysis (EDA) with statistical methods and 
-                                            visualizations using lets-plot to uncover patterns and insights.<br> You can see my project in Github </p>
-                                        <a href="https://github.com/suresh0615/Data-Engineering" target="_blank" class="btn btn-primary mt-3">
-						                    View Project
-					                    </a>
-                                    </div>
-                                    <img class="img-fluid" src="./assets/a person working with data for data engineering.png"
-                                        alt="data engineering" <img class="img-fluid"
-                                        src="./assets/realistic image of a person using a banking application.png"
-                                        alt="..." style="max-width: 300px; max-height: 350px;" />
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Project Card 2-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder">College Department Management System</h2>
-                                        <p>It has been built with the MERN stack (MongoDB, Express.js, React.js,
-                                            Node.js) and enables efficient student registration, class management, and
-                                            administrative control, ensuring seamless data management and user
-                                            interaction.</p>
-                                        <a href="https://college-department-frontend.onrender.com" target="_blank" class="btn btn-primary mt-3">
-						                View Project
-					                    </a>
-                                    </div>
-                                    <img class="img-fluid" src="./assets/college department management system.png"
-                                        alt="College Department Management System" <img class="img-fluid"
-                                        src="./assets/realistic image of a person using a banking application.png"
-                                        alt="..." style="max-width: 300px; max-height: 350px;" />
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Project Card 3-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder">Banking Application</h2>
-                                        <p>My Banking Application, built with the MERN stack, includes secure login,
-                                            deposit, and withdrawal functionalities. The admin can separately view users
-                                            and their account details, excluding passwords.</p>
-                                        <a href="https://banking-frontend-sip3.onrender.com" target="_blank" class="btn btn-primary mt-3">
-						                    View Project
-					                    </a>
-                                    </div>
-                                    <img class="img-fluid"
-                                        src="./assets/realistic image of a person using a banking application.png"
-                                        alt="Banking Application" <img class="img-fluid"
-                                        src="./assets/realistic image of a person using a banking application.png"
-                                        alt="..." style="max-width: 300px; max-height: 350px;" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Call to action section -->
-        <section class="py-5 bg-gradient-primary-to-secondary text-white">
-            <div class="container px-5 my-5">
-                <div class="text-center">
-                    <h2 class="display-4 fw-bolder mb-4">Get in Touch</h2>
-                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="#contact">Contact me</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- contact page -->
-        <section class="py-5" id="contact">
-            <div class="container px-5">
-                <!-- Contact form -->
-                <div class="bg-light rounded-4 py-5 px-4 px-md-5">
-                    <div class="text-center mb-5">
-                        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                        <h1 class="fw-bolder">Drop Your Interest Here</h1>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8 col-xl-6">
-                            <form id="contactForm" onsubmit="sendEmail(); return false;">
-                                <!-- Name input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                                        data-sb-validations="required" />
-                                    <label for="name">Full name</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.
-                                    </div>
-                                </div>
-                                <!-- Email address input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                                        data-sb-validations="required,email" />
-                                    <label for="email">Email address</label>
-                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is
-                                        required.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.
-                                    </div>
-                                </div>
-                                <!-- Phone number input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                                        data-sb-validations="required" />
-                                    <label for="phone">Phone number</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is
-                                        required.</div>
-                                </div>
-                                <!-- Message input-->
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" id="message" type="text"
-                                        placeholder="Enter your message here..." style="height: 10rem"
-                                        data-sb-validations="required"></textarea>
-                                    <label for="message">Message</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is
-                                        required.</div>
-                                </div>
-                                <!-- Submit success message-->
-                                <!-- This is what your users will see when the form has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Mail Successfully Sent to Sureshkumar!</div>
-                                    </div>
-                                </div>
-                                <!-- Submit error message-->
-                                <!-- This is what your users will see when there is an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage">
-                                    <div class="text-center text-danger mb-3">Error sending message!</div>
-                                </div>
-                                <!-- Submit Button-->
-                                <div class="d-grid">
-                                    <button class="btn btn-primary btn-lg" id="submitButton"
-                                        type="submit">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0"> &copy; All rights reserved</div>
-                </div>
-                <div class="col-auto">
-                    <a class="small" href="#contact">Contact</a>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2025 Sureshkumar. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/sureshkumar1512" class="social-link" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/suresh0615" class="social-link" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="#contact" class="social-link" title="Contact"><i class="bi bi-envelope-fill"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            if (window.emailjs) {
-                emailjs.init("kDwJfQTpqqFaRRmpy"); // Replace with your Public Key
-                console.log("✅ EmailJS Loaded Successfully.");
-            } else {
-                console.error("❌ EmailJS failed to load.");
+
+    // ======= Typing Animation =======
+    const roles = ["RAG & Generative AI", "Applied AI Research"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingEl = document.getElementById("typingText");
+
+    function typeRole() {
+        const current = roles[roleIndex];
+        if (isDeleting) {
+            typingEl.textContent = current.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typingEl.textContent = current.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        let speed = isDeleting ? 40 : 80;
+        if (!isDeleting && charIndex === current.length) {
+            speed = 2000;
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            speed = 500;
+        }
+        setTimeout(typeRole, speed);
+    }
+    setTimeout(typeRole, 1000);
+
+    // ======= Navbar Scroll Effect =======
+    const navbar = document.getElementById("mainNav");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+
+    // ======= Active Nav Link Tracking =======
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+    window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach(section => {
+            const top = section.offsetTop - 100;
+            if (window.scrollY >= top) {
+                current = section.getAttribute("id");
             }
         });
-
-        function sendEmail() {
-            if (!window.emailjs) {
-                console.error("❌ EmailJS is not loaded.");
-                document.getElementById("submitErrorMessage").classList.remove("d-none");
-                return;
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + current) {
+                link.classList.add("active");
             }
+        });
+    });
 
-            emailjs.send("service_3aacrpn", "template_k0gcgiv", {
-                from_name: document.getElementById("name").value,
-                from_email: document.getElementById("email").value,
-                phone: document.getElementById("phone").value,
-                message: document.getElementById("message").value
-            }).then(function (response) {
-                console.log("✅ SUCCESS!", response.status, response.text);
-                document.getElementById("submitSuccessMessage").classList.remove("d-none");
-                document.getElementById("contactForm").reset();
-            }, function (error) {
-                console.error("❌ FAILED...", error);
-                document.getElementById("submitErrorMessage").classList.remove("d-none");
-            });
+    // ======= Scroll Reveal =======
+    const revealEls = document.querySelectorAll(".reveal");
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("revealed");
+            }
+        });
+    }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // ======= Back to Top =======
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 500) {
+            backToTop.classList.add("visible");
+        } else {
+            backToTop.classList.remove("visible");
         }
+    });
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // ======= Smooth Scroll for Nav Links =======
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+            if (href !== "#") {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: "smooth" });
+                    // Close mobile nav
+                    const navCollapse = document.getElementById("navMenu");
+                    if (navCollapse.classList.contains("show")) {
+                        bootstrap.Collapse.getInstance(navCollapse)?.hide();
+                    }
+                }
+            }
+        });
+    });
     </script>
-
 </body>
-
 </html>
